@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Prashant Mohite — DevOps Engineer specializing in AWS, Azure, CI/CD, Kubernetes, and Infrastructure as Code." />
+  <title>Prashant Mohite | DevOps Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div class="bg-glow bg-glow--1" aria-hidden="true"></div>
+  <div class="bg-glow bg-glow--2" aria-hidden="true"></div>
+
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#home" class="nav__logo">
+        <span class="nav__logo-bracket">&lt;</span>PM<span class="nav__logo-bracket">/&gt;</span>
+      </a>
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav__links" id="navLinks">
+        <li><a href="#about" class="nav__link">About</a></li>
+        <li><a href="#experience" class="nav__link">Experience</a></li>
+        <li><a href="#skills" class="nav__link">Skills</a></li>
+        <li><a href="#projects" class="nav__link">Projects</a></li>
+        <li><a href="#education" class="nav__link">Education</a></li>
+        <li><a href="#contact" class="nav__link nav__link--cta">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero section" id="home">
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <p class="hero__greeting fade-in">Hello, I'm</p>
+          <h1 class="hero__name fade-in">Prashant Mohite</h1>
+          <p class="hero__title fade-in">
+            <span class="hero__title-text" id="typedText"></span>
+            <span class="hero__cursor">|</span>
+          </p>
+          <p class="hero__summary fade-in">
+            DevOps Engineer with 3 years of experience in AWS and Azure, specializing in CI/CD automation,
+            infrastructure as code, Kubernetes, and production monitoring.
+          </p>
+          <div class="hero__actions fade-in">
+            <a href="#contact" class="btn btn--primary">Get in Touch</a>
+            <a href="#experience" class="btn btn--outline">View Experience</a>
+          </div>
+          <div class="hero__stats fade-in">
+            <div class="stat">
+              <span class="stat__value">3+</span>
+              <span class="stat__label">Years Experience</span>
+            </div>
+            <div class="stat">
+              <span class="stat__value">2</span>
+              <span class="stat__label">Cloud Platforms</span>
+            </div>
+            <div class="stat">
+              <span class="stat__value">IaC</span>
+              <span class="stat__label">Terraform Expert</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero__visual fade-in">
+          <div class="terminal">
+            <div class="terminal__bar">
+              <span class="terminal__dot terminal__dot--red"></span>
+              <span class="terminal__dot terminal__dot--yellow"></span>
+              <span class="terminal__dot terminal__dot--green"></span>
+              <span class="terminal__title">prashant@devops ~</span>
+            </div>
+            <div class="terminal__body">
+              <p><span class="terminal__prompt">$</span> kubectl get pods -A</p>
+              <p class="terminal__output">NAMESPACE &nbsp;&nbsp; NAME &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; STATUS</p>
+              <p class="terminal__output">production &nbsp; api-server-7f8b9 &nbsp;&nbsp; Running</p>
+              <p class="terminal__output">production &nbsp; nginx-ingress &nbsp;&nbsp;&nbsp; Running</p>
+              <p class="terminal__output">monitoring &nbsp;&nbsp; prometheus-0 &nbsp;&nbsp;&nbsp;&nbsp; Running</p>
+              <p><span class="terminal__prompt">$</span> terraform apply -auto-approve</p>
+              <p class="terminal__output terminal__success">Apply complete! Resources: 12 added, 0 changed.</p>
+              <p><span class="terminal__prompt">$</span> <span class="terminal__cursor-blink">_</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="#about" class="hero__scroll" aria-label="Scroll down">
+        <span></span>
+      </a>
+    </section>
+
+    <!-- About -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section__header reveal">
+          <h2 class="section__title">Building Reliable Infrastructure</h2>
+        </div>
+        <div class="about__grid reveal">
+          <div class="about__text">
+            <p>
+              I'm a DevOps Engineer based in Chinchwad, Pune, with hands-on experience managing
+              multi-environment deployments across AWS and Azure. I focus on improving system reliability,
+              automating workflows, and resolving production issues in real-world scenarios.
+            </p>
+            <p>
+              From designing Jenkins CI/CD pipelines to provisioning infrastructure with Terraform,
+              I enjoy building systems that are scalable, secure, and observable. I'm passionate about
+              incident management, root cause analysis, and implementing preventive measures that keep
+              production running smoothly.
+            </p>
+          </div>
+          <div class="about__highlights">
+            <div class="highlight-card">
+              <div class="highlight-card__icon">⚡</div>
+              <h3>CI/CD Automation</h3>
+              <p>Multi-environment pipelines with Jenkins & Azure DevOps</p>
+            </div>
+            <div class="highlight-card">
+              <div class="highlight-card__icon">☁️</div>
+              <h3>Cloud Infrastructure</h3>
+              <p>AWS & Azure with Terraform and ARM Templates</p>
+            </div>
+            <div class="highlight-card">
+              <div class="highlight-card__icon">📊</div>
+              <h3>Monitoring</h3>
+              <p>Prometheus, Grafana, CloudWatch & Azure Monitor</p>
+            </div>
+            <div class="highlight-card">
+              <div class="highlight-card__icon">🔒</div>
+              <h3>Security & Ops</h3>
+              <p>RBAC, secrets management, and incident response</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section class="section section--alt" id="experience">
+      <div class="container">
+        <div class="section__header reveal">
+          <h2 class="section__title">Where I've Worked</h2>
+        </div>
+        <div class="timeline reveal">
+          <article class="timeline__item">
+            <div class="timeline__marker"></div>
+            <div class="timeline__card">
+              <div class="timeline__header">
+                <div>
+                  <h3 class="timeline__role">DevOps Engineer</h3>
+                  <p class="timeline__company">Celeritio Software Private Limited, Pune</p>
+                </div>
+                <span class="timeline__date">2.11 Years — Present</span>
+              </div>
+
+              <div class="timeline__project">
+                <h4 class="timeline__project-name">Datafrugal</h4>
+                <ul class="timeline__list">
+                  <li>Designed and automated CI/CD pipelines using Jenkins for multi-environment deployments (Dev to Production), improving release consistency and reducing manual deployment effort.</li>
+                  <li>Automated Keycloak setup using Bash scripting, simplifying local environment setup for developers and reducing onboarding time.</li>
+                  <li>Automated domain certificate management using Bash scripts, improving security compliance and eliminating manual renewal efforts.</li>
+                  <li>Automated daily Cypress test execution using Jenkins pipelines, improving test consistency and reducing manual QA effort.</li>
+                  <li>Built Python-based automation to manage demo environment lifecycle (start/stop), improving cost efficiency and operational control.</li>
+                  <li>Implemented infrastructure monitoring using AWS CloudWatch with threshold-based alerts for CPU, memory, and disk usage, enabling proactive issue detection.</li>
+                  <li>Provisioned and managed infrastructure using Terraform, focusing on reusability and scalability.</li>
+                  <li>Actively participated in incident management, including troubleshooting, root cause analysis (RCA), and implementing preventive measures.</li>
+                </ul>
+              </div>
+
+              <div class="timeline__project">
+                <h4 class="timeline__project-name">Intelligent Document Processing</h4>
+                <ul class="timeline__list">
+                  <li>Collaborated on implementing security recommendations from third-party penetration testing to enhance system security posture.</li>
+                  <li>Led migration of environments across cloud subscriptions, improving security posture and optimizing resource governance.</li>
+                  <li>Provisioned and managed scalable infrastructure using Terraform with reusable modules across multiple environments (Dev, Demo, Production).</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section__header reveal">
+          <h2 class="section__title">Technical Toolkit</h2>
+        </div>
+        <div class="skills__grid reveal">
+          <div class="skill-card">
+            <div class="skill-card__icon">🏗️</div>
+            <h3>Infrastructure as Code</h3>
+            <div class="skill-card__tags">
+              <span>Terraform</span>
+              <span>ARM Templates</span>
+              <span>Azure CLI</span>
+            </div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-card__icon">☁️</div>
+            <h3>Cloud & Platform</h3>
+            <div class="skill-card__tags">
+              <span>Microsoft Azure</span>
+              <span>AWS</span>
+            </div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-card__icon">🐳</div>
+            <h3>Containers & Orchestration</h3>
+            <div class="skill-card__tags">
+              <span>Docker</span>
+              <span>Kubernetes</span>
+              <span>AKS</span>
+              <span>Helm</span>
+            </div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-card__icon">🔄</div>
+            <h3>CI/CD & Automation</h3>
+            <div class="skill-card__tags">
+              <span>Jenkins</span>
+              <span>Azure Pipelines</span>
+              <span>Shell Scripting</span>
+              <span>Python</span>
+            </div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-card__icon">📈</div>
+            <h3>Monitoring & Observability</h3>
+            <div class="skill-card__tags">
+              <span>Prometheus</span>
+              <span>Grafana</span>
+              <span>Azure Monitor</span>
+              <span>CloudWatch</span>
+            </div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-card__icon">🛡️</div>
+            <h3>Security & Operations</h3>
+            <div class="skill-card__tags">
+              <span>RBAC</span>
+              <span>Network Security</span>
+              <span>Secrets Management</span>
+              <span>Linux Admin</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="section section--alt" id="projects">
+      <div class="container">
+        <div class="section__header reveal">
+          <h2 class="section__title">Featured Work</h2>
+        </div>
+        <div class="projects__grid reveal">
+          <article class="project-card">
+            <div class="project-card__header">
+              <div class="project-card__folder">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/>
+                </svg>
+              </div>
+              <div class="project-card__tech">
+                <span>Jenkins</span>
+                <span>Prometheus</span>
+                <span>Grafana</span>
+                <span>Nginx</span>
+              </div>
+            </div>
+            <h3 class="project-card__title">CI/CD & Monitoring for Open-Source Application</h3>
+            <p class="project-card__desc">
+              End-to-end DevOps pipeline with automated deployments and full observability stack
+              for production-grade reliability.
+            </p>
+            <ul class="project-card__list">
+              <li>Built CI/CD pipeline using Jenkins for automated build and deployment</li>
+              <li>Integrated Prometheus & Grafana for monitoring application and Nginx metrics (RPS, latency, errors)</li>
+              <li>Configured alerting for proactive issue detection and reliability</li>
+              <li>Simulated high-traffic and failure scenarios to validate monitoring setup</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education & Certifications -->
+    <section class="section" id="education">
+      <div class="container">
+        <div class="section__header reveal">
+          <h2 class="section__title">Education & Certifications</h2>
+        </div>
+        <div class="edu__grid reveal">
+          <div class="edu__column">
+            <h3 class="edu__subtitle">Education</h3>
+            <article class="edu-card">
+              <div class="edu-card__year">2020 — 2022</div>
+              <h4 class="edu-card__degree">B.Tech in Mechanical Engineering</h4>
+              <p class="edu-card__school">Allard College of Engineering, Pune, Maharashtra</p>
+            </article>
+            <article class="edu-card">
+              <div class="edu-card__year">2018 — 2020</div>
+              <h4 class="edu-card__degree">Diploma in Mechanical Engineering</h4>
+              <p class="edu-card__school">Pimpri Chinchwad Polytechnic, Pune, Maharashtra</p>
+            </article>
+          </div>
+          <div class="edu__column">
+            <h3 class="edu__subtitle">Certifications</h3>
+            <article class="cert-card">
+              <div class="cert-card__badge">🎓</div>
+              <div>
+                <h4 class="cert-card__name">Cloud and DevOps Architect Master Course</h4>
+                <p class="cert-card__issuer">Intellipaat</p>
+              </div>
+            </article>
+            <article class="cert-card">
+              <div class="cert-card__badge">📜</div>
+              <div>
+                <h4 class="cert-card__name">Maven Crash Course</h4>
+                <p class="cert-card__issuer">Udemy</p>
+              </div>
+            </article>
+            <article class="cert-card">
+              <div class="cert-card__badge">🐍</div>
+              <div>
+                <h4 class="cert-card__name">Python</h4>
+                <p class="cert-card__issuer">GeeksforGeeks</p>
+              </div>
+            </article>
+            <article class="cert-card">
+              <div class="cert-card__badge">☁️</div>
+              <div>
+                <h4 class="cert-card__name">AWS Educate Introduction to Cloud 101</h4>
+                <p class="cert-card__issuer">Amazon Web Services (AWS)</p>
+              </div>
+            </article>
+            <article class="cert-card cert-card--progress">
+              <div class="cert-card__badge">🎯</div>
+              <div>
+                <h4 class="cert-card__name">Preparing for AZ-104</h4>
+                <p class="cert-card__issuer">Microsoft Azure Administrator</p>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="languages reveal">
+          <h3 class="edu__subtitle">Languages</h3>
+          <div class="languages__tags">
+            <span>English</span>
+            <span>Hindi</span>
+            <span>Marathi</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section section--contact" id="contact">
+      <div class="container">
+        <div class="section__header reveal">
+          <h2 class="section__title">Let's Connect</h2>
+          <p class="section__subtitle">Open to DevOps opportunities and collaborations. Feel free to reach out!</p>
+        </div>
+        <div class="contact__grid reveal">
+          <a href="mailto:mohitep2704@gmail.com" class="contact-card">
+            <div class="contact-card__icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                <polyline points="22,6 12,13 2,6"/>
+              </svg>
+            </div>
+            <div>
+              <span class="contact-card__label">Email</span>
+              <span class="contact-card__value">mohitep2704@gmail.com</span>
+            </div>
+          </a>
+          <a href="tel:+919970557964" class="contact-card">
+            <div class="contact-card__icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+              </svg>
+            </div>
+            <div>
+              <span class="contact-card__label">Phone</span>
+              <span class="contact-card__value">+91 99705 57964</span>
+            </div>
+          </a>
+          <a href="https://www.linkedin.com/in/prashant-mohite" target="_blank" rel="noopener noreferrer" class="contact-card">
+            <div class="contact-card__icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 4.126 0 2.063 2.063 0 0 1-2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+              </svg>
+            </div>
+            <div>
+              <span class="contact-card__label">LinkedIn</span>
+              <span class="contact-card__value">Prashant Mohite</span>
+            </div>
+          </a>
+          <div class="contact-card contact-card--static">
+            <div class="contact-card__icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                <circle cx="12" cy="10" r="3"/>
+              </svg>
+            </div>
+            <div>
+              <span class="contact-card__label">Location</span>
+              <span class="contact-card__value">Chinchwad, Pune — 411019</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>Designed & Built by <strong>Prashant Mohite</strong></p>
+      <p class="footer__year">&copy; <span id="year"></span></p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
