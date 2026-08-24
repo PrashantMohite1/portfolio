@@ -17,9 +17,6 @@
 
   <header class="header" id="header">
     <nav class="nav container">
-      <a href="#home" class="nav__logo">
-        <span class="nav__logo-bracket">&lt;</span>PM<span class="nav__logo-bracket">/&gt;</span>
-      </a>
       <button class="nav__toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
         <span></span>
         <span></span>
@@ -157,29 +154,29 @@
                   <h3 class="timeline__role">DevOps Engineer</h3>
                   <p class="timeline__company">Celeritio Software Private Limited, Pune</p>
                 </div>
-                <span class="timeline__date">2.11 Years — Present</span>
+                <span class="timeline__date">July 2023 — July 2026 (3 years)</span>
               </div>
 
               <div class="timeline__project">
                 <h4 class="timeline__project-name">Datafrugal</h4>
                 <ul class="timeline__list">
-                  <li>Designed and automated CI/CD pipelines using Jenkins for multi-environment deployments (Dev to Production), improving release consistency and reducing manual deployment effort.</li>
-                  <li>Automated Keycloak setup using Bash scripting, simplifying local environment setup for developers and reducing onboarding time.</li>
-                  <li>Automated domain certificate management using Bash scripts, improving security compliance and eliminating manual renewal efforts.</li>
-                  <li>Automated daily Cypress test execution using Jenkins pipelines, improving test consistency and reducing manual QA effort.</li>
-                  <li>Built Python-based automation to manage demo environment lifecycle (start/stop), improving cost efficiency and operational control.</li>
-                  <li>Implemented infrastructure monitoring using AWS CloudWatch with threshold-based alerts for CPU, memory, and disk usage, enabling proactive issue detection.</li>
-                  <li>Provisioned and managed infrastructure using Terraform, focusing on reusability and scalability.</li>
-                  <li>Actively participated in incident management, including troubleshooting, root cause analysis (RCA), and implementing preventive measures.</li>
+                  <li>Reduced new environment provisioning time by 70% by automating AWS infrastructure with Terraform modules and Bash scripts.</li>
+                  <li>Reduced application deployment time by 60% by implementing Jenkins CI/CD pipelines with automated build and deployment workflows.</li>
+                  <li>Improved developer testing efficiency by 90% by integrating automated Cypress test execution into Jenkins CI/CD pipelines.</li>
+                  <li>Improved incident detection and troubleshooting by implementing AWS CloudWatch monitoring and alerting for production workloads.</li>
+                  <li>Reduced demo environment costs by 80% by automating start/stop operations with Python scripts and containerization, enabling environments to be provisioned within 5 minutes.</li>
+                  <li>Reduced local environment setup time by 50% by automating Keycloak and PostgreSQL initialization with Bash scripts and Docker entrypoints.</li>
+                  <li>Improved CSA audit readiness by establishing structured documentation for environments, releases, runbooks, and test evidence, enabling complete traceability of operational history.</li>
                 </ul>
               </div>
 
               <div class="timeline__project">
                 <h4 class="timeline__project-name">Intelligent Document Processing</h4>
                 <ul class="timeline__list">
-                  <li>Collaborated on implementing security recommendations from third-party penetration testing to enhance system security posture.</li>
-                  <li>Led migration of environments across cloud subscriptions, improving security posture and optimizing resource governance.</li>
-                  <li>Provisioned and managed scalable infrastructure using Terraform with reusable modules across multiple environments (Dev, Demo, Production).</li>
+                  <li>Reduced Azure environment provisioning time by 60% by implementing Terraform-based infrastructure automation and standardized environment documentation, enabling identification of configuration gaps across environments.</li>
+                  <li>Improved Azure environment isolation and security posture by migrating Dev, Demo, UAT, and Prod from a shared subscription to dedicated subscriptions, increasing Microsoft Defender for Cloud Secure Score by 50% and enabling environment-level issue identification.</li>
+                  <li>Reduced build-agent troubleshooting time by 40% by implementing Prometheus and Grafana monitoring for self-hosted Azure DevOps agents, enabling proactive detection of health and resource issues.</li>
+                  <li>Strengthened system and access security posture by remediating findings from third-party penetration testing and implementing recommended security controls.</li>
                 </ul>
               </div>
             </div>
@@ -230,6 +227,7 @@
               <span>Azure Pipelines</span>
               <span>Shell Scripting</span>
               <span>Python</span>
+              <span>Golang</span>
             </div>
           </div>
           <div class="skill-card">
@@ -271,22 +269,49 @@
                 </svg>
               </div>
               <div class="project-card__tech">
-                <span>Jenkins</span>
-                <span>Prometheus</span>
-                <span>Grafana</span>
-                <span>Nginx</span>
+                <span>Terraform</span>
+                <span>Bash</span>
+                <span>Kubernetes</span>
+                <span>AWS</span>
               </div>
             </div>
-            <h3 class="project-card__title">CI/CD & Monitoring for Open-Source Application</h3>
+            <h3 class="project-card__title">Kubernetes Cluster Provisioner</h3>
             <p class="project-card__desc">
-              End-to-end DevOps pipeline with automated deployments and full observability stack
-              for production-grade reliability.
+              Automated Kubernetes cluster provisioning on AWS with infrastructure, node initialization,
+              and cluster configuration managed through Terraform and Bash.
             </p>
             <ul class="project-card__list">
-              <li>Built CI/CD pipeline using Jenkins for automated build and deployment</li>
-              <li>Integrated Prometheus & Grafana for monitoring application and Nginx metrics (RPS, latency, errors)</li>
-              <li>Configured alerting for proactive issue detection and reliability</li>
-              <li>Simulated high-traffic and failure scenarios to validate monitoring setup</li>
+              <li>Reduced cluster provisioning time by approximately 90%, from 1-1.5 hours to 7-8 minutes</li>
+              <li>Automated a highly available 3-control-plane, 3-worker Kubernetes cluster</li>
+              <li>Configured an AWS Network Load Balancer for Kubernetes API access and control-plane availability</li>
+              <li>Validated end-to-end functionality by deploying Google's microservices-demo with Helm</li>
+            </ul>
+          </article>
+
+          <article class="project-card">
+            <div class="project-card__header">
+              <div class="project-card__folder">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/>
+                </svg>
+              </div>
+              <div class="project-card__tech">
+                <span>Golang</span>
+                <span>Cobra CLI</span>
+                <span>Docker API</span>
+                <span>SHA256</span>
+              </div>
+            </div>
+            <h3 class="project-card__title">DockLens Docker Image Analyzer</h3>
+            <p class="project-card__desc">
+              A Golang CLI that verifies Docker image integrity by comparing container files with local source code
+              before deployment.
+            </p>
+            <ul class="project-card__list">
+              <li>Automated Docker image inspection and source-to-image comparison through the Docker Engine API</li>
+              <li>Implemented file discovery, content hashing, and comparison workflows with Cobra CLI</li>
+              <li>Used SHA256 hashes to detect unexpected or mismatched container artifacts</li>
+              <li>Created a repeatable pre-release workflow for validating containerized application contents</li>
             </ul>
           </article>
         </div>
@@ -381,17 +406,6 @@
             <div>
               <span class="contact-card__label">Email</span>
               <span class="contact-card__value">mohitep2704@gmail.com</span>
-            </div>
-          </a>
-          <a href="tel:+919970557964" class="contact-card">
-            <div class="contact-card__icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
-              </svg>
-            </div>
-            <div>
-              <span class="contact-card__label">Phone</span>
-              <span class="contact-card__value">+91 99605 57964</span>
             </div>
           </a>
           <a href="https://www.linkedin.com/in/prashant-mohite" target="_blank" rel="noopener noreferrer" class="contact-card">
